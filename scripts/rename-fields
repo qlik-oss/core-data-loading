@@ -1,7 +1,0 @@
-Airports:
-    LOAD
-      rowID As ID,
-      Airport AS AirportName,
-      City
-    FROM [lib://data/airports.csv]
-    (txt, utf8, embedded labels, delimiter is ',');

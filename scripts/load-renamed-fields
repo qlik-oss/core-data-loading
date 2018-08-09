@@ -1,0 +1,7 @@
+Airports:
+    LOAD
+      rowID As ID,
+      Airport AS Name,
+      City
+    FROM [lib://data/airports.xlsx]
+    (ooxml, embedded labels, table is Airports);
