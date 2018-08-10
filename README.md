@@ -8,7 +8,7 @@ This repository contains the load script examples running on Qlik Core
 
 The requirements are that Docker and Node.js are installed.
 
-### Run the examples
+## Run the examples
 
 Before running the examples the Qlik Core EULA needs to be accepted by setting the ACCEPT_EULA environment variable to yes.
 
