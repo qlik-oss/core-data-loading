@@ -14,6 +14,7 @@ async function openSessionApp() {
   });
   const qix = await session.open();
   const app = await qix.createSessionApp();
+  console.log("Session opened.\n")
   return { session, qix, app };
 }
 

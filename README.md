@@ -18,23 +18,32 @@ All examples run towards a single instanve of Qlik Associative Engine. You start
 ACCEPT_EULA=<yes> docker-compose up -d
 ```
 
+This mounts all necessary sample data into the engine container.
+
 Next, install dependencies:
 
 ```sh
 npm install
 ```
 
+You can now run each script example by providing it as an argument to `npm start`. For example, to run the load script
+named `load-csv-file', run:
 
-
-
+```sh
 npm start load-csv-file
 ```
 
-
+This should print the table content loaded into Qlik Associative Engine to the console.
 
 ## List of examples
 
-- [load-csv-file](./scripts/load-csv-file)
-- [load-xlsx-file](./scripts/load-xlsx-file)
-- [load-subset-of-fields](./scripts/load-subset-of-fields)
-- [rename-fields](./scripts/rename-fields)
+The table below lists all load script examples and what main topics of writing load script they cover. All load script
+examples are located in the [scripts/](./scripts/) folder.
+
+Load script | Key topics covered
+----------- | ------------------
+[load-csv-file](./scripts/load-csv-file) | TODO
+[load-xlsx-file](./scripts/load-xlsx-file) | TODO
+[load-subset-of-fields](./scripts/load-subset-of-fields) | TODO
+[rename-fields](./scripts/rename-fields) | TODO
+[concat-tables](./scripts/concat-tables) | TODO

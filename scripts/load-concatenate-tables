@@ -1,3 +1,0 @@
-Table1:
-    LOAD a, b, c FROM [lib://data/table1-a.csv] (txt, utf8, embedded labels, delimiter is ',');
-    LOAD a, c, b FROM [lib://data/table1-b.csv] (txt, utf8, embedded labels, delimiter is ',');
