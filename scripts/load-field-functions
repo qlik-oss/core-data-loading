@@ -1,7 +1,7 @@
 Airports:
     LOAD
       rowID As id,
-      REPLACE(Airport, 'Airport', '') as Airport,
+      REPLACE(Airport, 'Airport', '') as Name, //If a Airport name includes Airport remove it
       City,
       UPPER(Country) as Country
     FROM [lib://data/airports.csv]
