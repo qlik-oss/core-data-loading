@@ -1,0 +1,5 @@
+Airports:
+    LOAD
+      *
+    FROM [lib://data/Sales.xlsx]
+    (ooxml, embedded labels, table is Sales);
