@@ -40,8 +40,8 @@ This should print the table content loaded into Qlik Associative Engine to the c
 The table below lists all load script examples and what main topics of writing load script they cover. All load script
 examples are located in the [scripts/](./scripts/) folder.
 
-Load script | Key topics covered
------------ | ------------------
+Load script | Key topics
+----------- | ----------
 [load-csv-file](./scripts/load-csv-file) | TODO
 [load-xlsx-file](./scripts/load-xlsx-file) | TODO
 [load-subset-of-fields](./scripts/load-subset-of-fields) | TODO
