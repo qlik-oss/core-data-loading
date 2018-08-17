@@ -4,7 +4,8 @@ This repository contains the load script examples running on Qlik Core
 - [load-csv-file](./scripts/load-csv-file)
 - [load-xlsx-file](./scripts/load-xlsx-file)
 - [load-subset-of-fields](./scripts/load-subset-of-fields)
-- [rename-fields](./scripts/rename-fields)
+- [load-rename-fields](./scripts/load-rename-fields)
+- [load-field-functions](./scripts/load-field-functions)
 
 The requirements are that Docker and Node.js are installed.
 

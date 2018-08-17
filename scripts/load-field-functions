@@ -1,0 +1,8 @@
+Airports:
+    LOAD
+      rowID As id,
+      REPLACE(Airport, 'Airport', '') as Airport,
+      City,
+      UPPER(Country) as Country
+    FROM [lib://data/airports.csv]
+    (txt, utf8, embedded labels, delimiter is ',');
