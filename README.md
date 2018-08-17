@@ -42,8 +42,9 @@ examples are located in the [scripts/](./scripts/) folder.
 
 Load script | Key topics
 ----------- | ----------
-[load-csv-file](./scripts/load-csv-file) | TODO
-[load-xlsx-file](./scripts/load-xlsx-file) | TODO
-[load-subset-of-fields](./scripts/load-subset-of-fields) | TODO
-[rename-fields](./scripts/rename-fields) | TODO
-[concat-tables](./scripts/concat-tables) | TODO
+[load-csv-file](./scripts/load-csv-file) | Loading data from a CSV file.
+[load-xlsx-file](./scripts/load-xlsx-file) | Loading data from an Excel file.
+[load-subset-of-fields](./scripts/load-subset-of-fields) | Loading a subset of fields.
+[rename-fields](./scripts/rename-fields) | Renaming fields.
+[concat-tables-auto](./scripts/concat-tables) | Automatic concatenation into one table.
+[concat-tables-forced](./scripts/concat-tables) | Forced concatenation into one table.
