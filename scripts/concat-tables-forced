@@ -1,0 +1,2 @@
+LOAD a, b, c FROM [lib://data/table1.csv];
+CONCATENATE LOAD a, c FROM [lib://data/table2.csv];
