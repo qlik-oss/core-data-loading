@@ -42,9 +42,11 @@ examples are located in the [scripts/](./scripts/) folder.
 
 Load script | Key topics
 ----------- | ----------
-[load-csv-file](./scripts/load-csv-file) | Loading data from a CSV file.
-[load-xlsx-file](./scripts/load-xlsx-file) | Loading data from an Excel file.
-[load-subset-of-fields](./scripts/load-subset-of-fields) | Loading a subset of fields.
-[rename-fields](./scripts/rename-fields) | Renaming fields.
-[concat-tables-auto](./scripts/concat-tables) | Automatic concatenation into one table.
-[concat-tables-forced](./scripts/concat-tables) | Forced concatenation into one table.
+[load-csv-file](./scripts/load-csv-file) | <ul><li>Loading data from a CSV file.</ul>
+[load-xlsx-file](./scripts/load-xlsx-file) | <ul><li>Loading data from an Excel file.</ul>
+[load-subset-of-fields](./scripts/load-subset-of-fields) | <ul><li>Loading a subset of fields.<ul>
+[rename-fields](./scripts/rename-fields) | <ul><li>Renaming fields.<ul>
+[concat-tables-auto](./scripts/concat-tables) | <ul><li>Automatic concatenation into one table.<ul>
+[concat-tables-forced](./scripts/concat-tables) | <ul><li>Forced concatenation into one table.<ul>
+[preceding-load-calc-field](./scripts/preceding-load-calc-field) | <ul><li>Using preceding LOAD to calculate new field in single pass.<ul>
+[preceding-load-reuse-calc](./scripts/preceding-load-reuse-calc) | <ul><li>Using preceding LOAD to reuse a calculation.<li>`IF` and `WHILE`<li>`iterno()`</ul>
