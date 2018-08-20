@@ -44,10 +44,11 @@ Load script | Key topics
 ----------- | ----------
 [load-csv-file](./scripts/load-csv-file) | <ul><li>Loading data from a CSV file.</ul>
 [load-xlsx-file](./scripts/load-xlsx-file) | <ul><li>Loading data from an Excel file.</ul>
-[load-inline-table](./scripts/load-inline-table) | Loading an inline table 
-[load-subset-of-fields](./scripts/load-subset-of-fields) | Loading a subset of fields.
-[rename-fields](./scripts/rename-fields) | Renaming fields.
-[concat-tables-forced](./scripts/concat-tables) | <ul><li>Forced concatenation into one table.<ul>
-[load-field-functions](./scripts/load-field-functions)
-[preceding-load-calc-field](./scripts/preceding-load-calc-field) | <ul><li>Using preceding LOAD to calculate new field in single pass.<ul>
+[load-inline-table](./scripts/load-inline-table) | <ul><li>Loading an inline table.</ul>
+[load-subset-of-fields](./scripts/load-subset-of-fields) | <ul><li>Loading a subset of fields.</ul>
+[rename-fields](./scripts/rename-fields) | <ul><li>Renaming fields.</ul>
+[load-field-functions](./scripts/load-field-functions) | 
+[preceding-load-calc-field](./scripts/preceding-load-calc-field) | <ul><li>Using preceding LOAD to calculate new field in single pass.</ul>
 [preceding-load-reuse-calc](./scripts/preceding-load-reuse-calc) | <ul><li>Using preceding LOAD to reuse a calculation.<li>`IF` and `WHILE`<li>`iterno()`</ul>
+[concat-tables-auto](./scripts/concat-tables) | <ul><li>Automatic concatenation into one table.</ul>
+[concat-tables-forced](./scripts/concat-tables) | <ul><li>Forced concatenation into one table.</ul>
