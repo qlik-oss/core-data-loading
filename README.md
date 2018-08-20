@@ -44,7 +44,7 @@ Load script | Key topics
 ----------- | ----------
 [load-csv-file](./scripts/load-csv-file) | Loading data from a CSV file.
 [load-xlsx-file](./scripts/load-xlsx-file) | Loading data from an Excel file.
-[load-inline](./scripts/load-inline) | Loading an inline table 
+[load-inline-table](./scripts/load-inline-table) | Loading an inline table 
 [load-subset-of-fields](./scripts/load-subset-of-fields) | Loading a subset of fields.
 [rename-fields](./scripts/rename-fields) | Renaming fields.
 [concat-tables-auto](./scripts/concat-tables) | Automatic concatenation into one table.
