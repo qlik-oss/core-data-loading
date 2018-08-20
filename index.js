@@ -15,7 +15,8 @@ async function openSessionApp() {
   const qix = await session.open();
   const app = await qix.createSessionApp();
   await qix.configureReload(true, true, false);
-  return { session, app };
+  console.log('Session opened.\n');
+  return { session, qix, app };
 }
 
 async function readScript(scriptPath) {
@@ -94,7 +95,7 @@ async function closeSession(session) {
 (async () => {
   const scriptPath = `${path.dirname(__filename)}/scripts/${process.argv[2]}`;
   const script = await readScript(scriptPath);
-  const { session, app } = await openSessionApp();
+  const { session, qix, app } = await openSessionApp();
   await createConnection(app, 'data', '/data/', 'folder');
   await setScriptAndDoReload(qix, app, script);
   await printTables(app);
