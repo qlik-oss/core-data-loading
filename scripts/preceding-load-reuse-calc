@@ -1,0 +1,26 @@
+// The (fictious) load script below performs the same calculation twice.
+// First when generating the KeyId field and then a second calculation to
+// determine whether the key is even or odd.
+
+// EvenOrOddness:
+//    LOAD
+//        iterno() - 1 + Base AS KeyId,
+//        IF (Even(iterno() - 1 + Base), 'Even', 'Odd') AS EvenOrOdd
+//        WHILE iterno() <= Length;        
+//    LOAD * INLINE
+//    [ Base, Length
+//      10  , 100 ];
+
+// By using preceding LOAD, we can reuse a calculation and avoid the double
+// calculation by adding an extra LOAD statement.
+
+EvenOrOddness:
+    LOAD
+        Id AS KeyId,
+        IF (Even(Id), 'Even', 'Odd') AS EvenOrOdd;
+    LOAD
+        iterno() - 1 + Base AS Id
+        WHILE iterno() <= Length;
+    LOAD * INLINE
+    [ Base, Length
+      10  , 100 ];
