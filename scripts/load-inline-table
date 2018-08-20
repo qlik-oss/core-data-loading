@@ -1,5 +1,5 @@
 Cities:
-  LOAD * Inline 
+  LOAD * INLINE 
   [
     City, Country
     Stockholm, Sweden
