@@ -12,10 +12,11 @@ TODO: Mention and provide link to some of the examples covered by tutorials on t
 Docker and Node.js must be installed on the machine running the examples. The Qlik Core EULA needs to be accepted by
 setting the `ACCEPT_EULA` environment variable to `yes`.
 
-All examples run towards a single instanve of Qlik Associative Engine. You start it with:
+All examples run towards a single instance of Qlik Associative Engine. Change the value of `ACCEPT_EULA` accordingly and
+start it with:
 
 ```sh
-ACCEPT_EULA=<yes> docker-compose up -d
+ACCEPT_EULA=<yes/no> docker-compose up -d
 ```
 
 This mounts all necessary sample data into the engine container.
