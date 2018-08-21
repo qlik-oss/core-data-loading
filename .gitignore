@@ -63,3 +63,6 @@ typings/
 # IDEs/editors
 .idea/
 .vscode/
+
+# Orig files (diff/merge tools)
+*.orig

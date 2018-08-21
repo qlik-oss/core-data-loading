@@ -1,0 +1,8 @@
+// The load script below shows how to use preceding LOAD to calculate a new
+// field, Tax, in one table in a single pass.
+
+SET SalesTax = 0.10;
+
+Taxes:
+    LOAD *, Salary * $(SalesTax) as Tax;
+    LOAD * FROM [lib://data/salaries.csv]

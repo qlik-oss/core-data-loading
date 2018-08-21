@@ -1,0 +1,13 @@
+// This load script shows how a field from the input data can be split into
+// several fields, in this case using the subfield function. The input field
+// 'Code' is split into three parts, outputting the 'LetterCode',
+// 'NumericCode', and 'HexCode' fields in the 'Locations' table.
+// The 'State' field from the input is also renamed to 'Location'.
+
+Locations:
+    LOAD   
+        subfield(Code, '-', 1) as LetterCode,
+        subfield(Code, '-', 2) as NumericCode,
+        subfield(Code, '-', 3) as HexCode,
+        State AS Location
+    FROM [lib://data/location-codes.csv];
