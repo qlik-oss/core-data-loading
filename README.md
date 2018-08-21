@@ -49,6 +49,7 @@ Load script | Key topics
 [load-subset-of-fields](./scripts/load-subset-of-fields) | <ul><li>Loading a subset of fields.</ul>
 [rename-fields](./scripts/rename-fields) | <ul><li>Renaming fields.</ul>
 [load-field-functions](./scripts/load-field-functions) | 
+[load-resident](./scripts/load-resident) | <ul><li>Loading data from previously loaded table.</ul>
 [preceding-load-calc-field](./scripts/preceding-load-calc-field) | <ul><li>Using preceding LOAD to calculate a new field in single pass.</ul>
 [preceding-load-reuse-calc](./scripts/preceding-load-reuse-calc) | <ul><li>Using preceding LOAD to avoid duplicate calculations.<li>Usage of the `AUTOGENERATE` statement and the `recno` function.</ul>
 [concat-tables-auto](./scripts/concat-tables) | <ul><li>Automatic concatenation into one table.</ul>
