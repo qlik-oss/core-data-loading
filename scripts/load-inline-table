@@ -1,0 +1,14 @@
+Cities:
+  LOAD * INLINE 
+  [
+    City, Country
+    Stockholm, Sweden
+    Shanghai, China
+    Oslo, Norway
+    Copenhagen, Denmark
+    Helsinki, Finland
+    Berlin, Germany
+    Barcelona, Spain,
+    Cairo, Egypt
+    Bangalore, India
+  ];
