@@ -55,3 +55,4 @@ Load script | Key topics
 [preceding-load-reuse-calc](./scripts/preceding-load-reuse-calc) | <ul><li>Using preceding LOAD to avoid duplicate calculations.<li>Usage of the `AUTOGENERATE` statement and the `recno` function.</ul>
 [concat-tables-auto](./scripts/concat-tables) | <ul><li>Automatic concatenation into one table.</ul>
 [concat-tables-forced](./scripts/concat-tables) | <ul><li>Forced concatenation into one table.</ul>
+[load-crosstable](./scripts/load-crosstable) | <ul><li>Turn a wide table into a tall table.</ul>
