@@ -1,0 +1,28 @@
+// The (fictious) load script below performs the same calculation twice:
+// recno() * 1000 + mod(recno(), 10) + 1
+
+// ========================================
+// First version - Duplicated calculation
+// ========================================
+
+// EvenOrOddness:
+//     LOAD
+//         recno() * 1000 + mod(recno(), 10) + 1 AS KeyId,
+//         if(Even(recno() * 1000 + mod(recno(), 10) + 1), 'Even', 'Odd') AS EvenOrOdd
+//         AUTOGENERATE 100;
+
+
+// By using preceding LOAD, we can reuse a calculation and avoid the double
+// calculation by adding an extra LOAD statement.
+
+// ========================================
+// Improved version - Reused calculation
+// ========================================
+
+EvenOrOddness:
+    LOAD
+        GenKey AS KeyId,
+        if(Even(GenKey), 'Even', 'Odd') AS EvenOrOdd;
+    LOAD
+        recno() * 1000 + mod(recno(), 10) + 1 AS GenKey
+        AUTOGENERATE 100;

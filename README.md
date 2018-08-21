@@ -12,10 +12,11 @@ TODO: Mention and provide link to some of the examples covered by tutorials on t
 Docker and Node.js must be installed on the machine running the examples. The Qlik Core EULA needs to be accepted by
 setting the `ACCEPT_EULA` environment variable to `yes`.
 
-All examples run towards a single instanve of Qlik Associative Engine. You start it with:
+All examples run towards a single instance of Qlik Associative Engine. Change the value of `ACCEPT_EULA` accordingly and
+start it with:
 
 ```sh
-ACCEPT_EULA=<yes> docker-compose up -d
+ACCEPT_EULA=<yes/no> docker-compose up -d
 ```
 
 This mounts all necessary sample data into the engine container.
@@ -42,12 +43,14 @@ examples are located in the [scripts/](./scripts/) folder.
 
 Load script | Key topics
 ----------- | ----------
-[load-csv-file](./scripts/load-csv-file) | Loading data from a CSV file.
-[load-xlsx-file](./scripts/load-xlsx-file) | Loading data from an Excel file.
-[load-inline-table](./scripts/load-inline-table) | Loading an inline table.
-[load-subset-of-fields](./scripts/load-subset-of-fields) | Loading a subset of fields.
-[rename-fields](./scripts/rename-fields) | Renaming fields.
-[load-resident](./scripts/load-resident) | Loading data from previously loaded table.
-[load-field-functions](./scripts/load-field-functions)
-[concat-tables-auto](./scripts/concat-tables) | Automatic concatenation into one table.
-[concat-tables-forced](./scripts/concat-tables) | Forced concatenation into one table.
+[load-csv-file](./scripts/load-csv-file) | <ul><li>Loading data from a CSV file.</ul>
+[load-xlsx-file](./scripts/load-xlsx-file) | <ul><li>Loading data from an Excel file.</ul>
+[load-inline-table](./scripts/load-inline-table) | <ul><li>Loading an inline table.</ul>
+[load-subset-of-fields](./scripts/load-subset-of-fields) | <ul><li>Loading a subset of fields.</ul>
+[rename-fields](./scripts/rename-fields) | <ul><li>Renaming fields.</ul>
+[load-field-functions](./scripts/load-field-functions) | 
+[load-resident](./scripts/load-resident) | <ul><li>Loading data from previously loaded table.</ul>
+[preceding-load-calc-field](./scripts/preceding-load-calc-field) | <ul><li>Using preceding LOAD to calculate a new field in single pass.</ul>
+[preceding-load-reuse-calc](./scripts/preceding-load-reuse-calc) | <ul><li>Using preceding LOAD to avoid duplicate calculations.<li>Usage of the `AUTOGENERATE` statement and the `recno` function.</ul>
+[concat-tables-auto](./scripts/concat-tables) | <ul><li>Automatic concatenation into one table.</ul>
+[concat-tables-forced](./scripts/concat-tables) | <ul><li>Forced concatenation into one table.</ul>
