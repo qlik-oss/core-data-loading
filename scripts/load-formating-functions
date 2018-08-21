@@ -5,6 +5,8 @@ LET CustomDisplayDateFormat='YYYY-MM';
 
 Sales:
     LOAD
+      //#Date() defines the input format of the date value
+      //Date() defines the that date value is a date and of what format it will us
       Date(Date#([Date], '$(InputDateFormat)')) as 'DateUsingDefaultSetting',
       Date(Date#([Date], '$(InputDateFormat)'), '$(CustomDisplayDateFormat)') as 'DateUsingCustomDisplayFormat'
     FROM [lib://data/Sales.csv]
