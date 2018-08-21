@@ -48,7 +48,7 @@ Load script | Key topics
 [load-subset-of-fields](./scripts/load-subset-of-fields) | Loading a subset of fields.
 [rename-fields](./scripts/rename-fields) | Renaming fields.
 [load-resident](./scripts/load-resident) | Loading data from previously loaded table.
-[load-field-functions](./scripts/load-field-functions) | String functions to change field values
+[load-field-functions](./scripts/load-field-functions) | Change fields values with string functions.
 [load-formating-functions](./scripts/load-formating-functions) | Format input and display formats of date fields
 [concat-tables-auto](./scripts/concat-tables) | Automatic concatenation into one table.
 [concat-tables-forced](./scripts/concat-tables) | Forced concatenation into one table.
