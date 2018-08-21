@@ -50,6 +50,7 @@ Load script | Key topics
 [rename-fields](./scripts/rename-fields) | <ul><li>Renaming fields.</ul>
 [load-field-functions](./scripts/load-field-functions) | 
 [split-field](./scripts/split-field) | <ul><li>Splitting a field into several fields.<li>Using the `subfield` function.</ul>
+[compounded-field](./scripts/compounded-field) | <ul><li>Creating a compounded field from other fields.<li>String concatenation.</ul>
 [load-resident](./scripts/load-resident) | <ul><li>Loading data from previously loaded table.</ul>
 [preceding-load-calc-field](./scripts/preceding-load-calc-field) | <ul><li>Using preceding LOAD to calculate a new field in single pass.</ul>
 [preceding-load-reuse-calc](./scripts/preceding-load-reuse-calc) | <ul><li>Using preceding LOAD to avoid duplicate calculations.<li>Usage of the `AUTOGENERATE` statement and the `recno` function.</ul>
