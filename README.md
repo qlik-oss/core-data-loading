@@ -52,7 +52,7 @@ Load script | Key topics
 [compound-field.qvs](./scripts/compound-field.qvs) | <ul><li>Creating a compound field from other fields.<li>String concatenation.</ul>
 [resident-load.qvs](./scripts/resident-load.qvs) | <ul><li>Loading data from previously loaded table.</ul>
 [preceding-calc-field.qvs](./scripts/preceding-calc-field.qvs) | <ul><li>Using preceding LOAD to calculate a new field in single pass.</ul>
-[preceding-reuse-calc.qvs](./scripts/preceding-reuse-calc.qvs) | <ul><li>Using preceding LOAD to avoid duplicate calculations.<li>Usage of the `AUTOGENERATE` statement and the `recno` function.</ul>
+[preceding-reuse-calc.qvs](./scripts/preceding-reuse-calc.qvs) | <ul><li>Using preceding LOAD to avoid duplicate calculations.<li>Usage of the `AUTOGENERATE` statement and the `RecNo` function.</ul>
 [concat-tables-auto.qvs](./scripts/concat-tables.qvs) | <ul><li>Automatic concatenation into one table.</ul>
 [concat-tables-forced.qvs](./scripts/concat-tables.qvs) | <ul><li>Forced concatenation into one table.</ul>
 [crosstable.qvs](./scripts/crosstable.qvs) | <ul><li>Turn a wide table into a tall table.</ul>
