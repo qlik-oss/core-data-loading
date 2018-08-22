@@ -1,2 +1,6 @@
-LOAD a, b, c FROM [lib://data/table1.csv];
-LOAD a, c, b FROM [lib://data/table2.csv];
+// The LOAD statements below result an automatic concatenation of values from 
+// both CSV files since the same fields are loaded from both files, yielding
+// one table with all values.
+
+LOAD Brand, RegNo, Year FROM [lib://data/cars1.csv];
+LOAD Brand, Year, RegNo FROM [lib://data/cars2.csv];
