@@ -1,12 +1,13 @@
-SET DateFormat='DD/MM/YYYY'; //This will be the default setting used by Date formatting functions. Read more about the default variables at https://www.qlikcore.com/services/qix-engine/script_reference/number_variables/
+// This will be the default setting used by Date formatting functions. Read more about the default variables at https://www.qlikcore.com/services/qix-engine/script_reference/number_variables/
+SET DateFormat='DD/MM/YYYY'; 
 
 LET InputDateFormat='YYYY-MM-DD';
 LET CustomDisplayDateFormat='YYYY-MM';
 
 Sales:
     LOAD
-      //#Date() defines the input format of the date value
-      //Date() defines that the date value is a date and of what format it will use
+      // #Date() defines the input format of the date value
+      // Date() defines that the date value is a date and of what format it will use
       Date(Date#([Date], '$(InputDateFormat)')) as 'DateUsingDefaultSetting',
       Date(Date#([Date], '$(InputDateFormat)'), '$(CustomDisplayDateFormat)') as 'DateUsingCustomDisplayFormat'
     FROM [lib://data/Sales.csv]
