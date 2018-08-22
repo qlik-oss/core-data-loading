@@ -7,6 +7,6 @@
 
 Airports:
     LOAD
-      *
+        *
     FROM [lib://data/airports.csv]
     (txt, utf8, embedded labels, delimiter is ',');

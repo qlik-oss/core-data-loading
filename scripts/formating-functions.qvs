@@ -1,5 +1,3 @@
-
-
 // This will be the default setting used by Date formatting functions.
 // Read more about the default variables at
 // https://www.qlikcore.com/services/qix-engine/script_reference/number_variables/
@@ -13,6 +11,6 @@ Sales:
         // #Date() defines the input format of the date value
         // Date() defines that the date value is a date and of what format it will use
         Date(Date#([Date], '$(InputDateFormat)')) as 'DateUsingDefaultSetting',
-        Date(Date#([Date], '$(InputDateFormat)'), '$(CustomDisplayDateFormat)') as 'DateUsingCustomDisplayFormat'
+        Date(Date#([Date], '$(InputDateFormat)'), '$(CustomDisplayDateFormat)') AS 'DateUsingCustomDisplayFormat'
     FROM [lib://data/sales.csv]
     (txt, utf8, embedded labels, delimiter is ';');
