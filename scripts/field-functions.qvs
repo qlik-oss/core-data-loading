@@ -1,0 +1,17 @@
+// This script shows examples of how functions operate on fields from the loaded
+// data to produce fields with modified data in the resulting table.
+// 
+// - The Replace() function is used to on the 'Airport' field to find ocurrances
+//   of the string 'Airport' in the name and remove from the generated 'Name'
+//   field.
+// - The Upper() function is used to make sure that country names are in
+//   uppercase in the 'Country' field.
+
+Airports:
+    LOAD
+        rowID AS id,
+        Replace(Airport, 'Airport', '') AS Name, 
+        City,
+        Upper(Country) AS Country
+    FROM [lib://data/airports.csv]
+    (txt, utf8, embedded labels, delimiter is ',');

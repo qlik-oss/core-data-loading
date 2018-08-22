@@ -1,0 +1,12 @@
+// This script shows a simple example of how to load data from a CSV file.
+// The options on the last line specify how data in the CSV file shall be
+// interpreted, for example, that the first line contains header names
+// ('embedded labels'), and which character endcoding that is used ('uft8').
+// Some of these are equal to the default values, but explicitly given here
+// for clarity.
+
+Airports:
+    LOAD
+      *
+    FROM [lib://data/airports.csv]
+    (txt, utf8, embedded labels, delimiter is ',');

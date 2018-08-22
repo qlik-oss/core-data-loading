@@ -1,0 +1,12 @@
+// This script shows a simple example of how to load data from an Ecxel file.
+// The options on the last line specify how data in the Ecxel file shall be
+// interpreted, for example, that the first line contains header names
+// ('embedded labels'), that the file is in the Open Document Format
+// ('ooxml'), and that data shall be read from the sheet named 'Airports'
+// ('table is Airports').
+
+Airports:
+    LOAD
+      *
+    FROM [lib://data/airports.xlsx]
+    (ooxml, embedded labels, table is Airports);

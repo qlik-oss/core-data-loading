@@ -1,5 +1,0 @@
-Airports:
-    LOAD
-      *
-    FROM [lib://data/airports.xlsx]
-    (ooxml, embedded labels, table is Airports);
