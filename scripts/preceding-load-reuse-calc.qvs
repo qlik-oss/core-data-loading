@@ -1,5 +1,5 @@
 // The (fictious) load script below performs the same calculation twice:
-// recno() * 1000 + mod(recno(), 10) + 1
+// RecNo() * 1000 + Mod(RecNo(), 10) + 1
 
 // ========================================
 // First version - Duplicated calculation
@@ -7,8 +7,8 @@
 
 // EvenOrOddness:
 //     LOAD
-//         recno() * 1000 + mod(recno(), 10) + 1 AS KeyId,
-//         if(Even(recno() * 1000 + mod(recno(), 10) + 1), 'Even', 'Odd') AS EvenOrOdd
+//         RecNo() * 1000 + Mod(RecNo(), 10) + 1 AS KeyId,
+//         if(Even(RecNo() * 1000 + Mod(RecNo(), 10) + 1), 'Even', 'Odd') AS EvenOrOdd
 //         AUTOGENERATE 100;
 
 
@@ -24,5 +24,5 @@ EvenOrOddness:
         GenKey AS KeyId,
         if(Even(GenKey), 'Even', 'Odd') AS EvenOrOdd;
     LOAD
-        recno() * 1000 + mod(recno(), 10) + 1 AS GenKey
+        RecNo() * 1000 + Mod(recno(), 10) + 1 AS GenKey
         AUTOGENERATE 100;

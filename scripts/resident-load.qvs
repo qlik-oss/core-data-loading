@@ -1,0 +1,25 @@
+// Resident load is useful when you want to load data from an already loaded
+// table. It can be data that is loaded with a SELECT statement where you do not
+// have the option to use script functions. Then you get a temporary table that
+// can be used for calculations or filtering.
+// Once you have achieved the purpose of the temporary table, it should be
+// dropped using the DROP TABLE statement.
+
+Countries:
+    LOAD * INLINE [
+        Country, Number, Year
+        Sweden, 100, 2015
+        Norway, 350, 2014
+        Denmark, 80, 2015
+        Denmark, 250, 2013
+        Germany, 150, 2014
+        Sweden, 120, 2014
+        Sweden, 80, 2013
+    ];
+
+TotalNumber:
+    LOAD
+        Country, Sum(Number) AS Number
+    RESIDENT Countries GROUP BY Country;
+
+DROP TABLE Countries;

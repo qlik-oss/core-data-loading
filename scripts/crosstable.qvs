@@ -1,0 +1,13 @@
+// The CROSSTABLE prefix is used to turn a cross table into a straight table.
+// If you for example have data with one column per month, the result of
+// CROSSTABLE in the script below, is that the column headers (month names)
+// are be stored in one field ('Month') and the column data (the month data)
+// is stored in a second field ('Number').
+
+CROSSTABLE (Month, Number, 1)
+LOAD * INLINE [
+    Country, Jan, Feb, Mar
+    Sweden, 100, 200, 300
+    Norway, 150, 100, 400
+    Denmark, 200, 300, 100
+];

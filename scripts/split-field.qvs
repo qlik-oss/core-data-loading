@@ -6,8 +6,8 @@
 
 Locations:
     LOAD   
-        subfield(Code, '-', 1) as LetterCode,
-        subfield(Code, '-', 2) as NumericCode,
-        subfield(Code, '-', 3) as HexCode,
+        SubField(Code, '-', 1) as LetterCode,
+        SubField(Code, '-', 2) as NumericCode,
+        SubField(Code, '-', 3) as HexCode,
         State AS Location
     FROM [lib://data/location-codes.csv];

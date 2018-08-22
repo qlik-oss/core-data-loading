@@ -93,7 +93,7 @@ async function closeSession(session) {
 }
 
 (async () => {
-  const scriptPath = `${path.dirname(__filename)}/scripts/${process.argv[2]}`;
+  const scriptPath = `${path.dirname(__filename)}/${process.argv[2]}`;
   const script = await readScript(scriptPath);
   const { session, qix, app } = await openSessionApp();
   await createConnection(app, 'data', '/data/', 'folder');

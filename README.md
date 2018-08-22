@@ -26,10 +26,10 @@ npm install
 ```
 
 You can now run each script example by providing it as an argument to `npm start`. For example, to run the load script
-named `csv-file', run:
+named `csv-file.qvs', run:
 
 ```sh
-npm start csv-file
+npm start scripts/csv-file.qvs
 ```
 
 This should print the table content loaded into Qlik Associative Engine to the console.
@@ -41,18 +41,18 @@ examples are located in the [scripts/](./scripts/) folder.
 
 Load script | Key topics
 ----------- | ----------
-[csv-file](./scripts/csv-file) | <ul><li>Loading data from a CSV file.</ul>
-[xlsx-file](./scripts/xlsx-file) | <ul><li>Loading data from an Excel file.</ul>
-[inline-table](./scripts/inline-table) | <ul><li>Loading an inline table.</ul>
-[subset-of-fields](./scripts/subset-of-fields) | <ul><li>Loading a subset of fields.</ul>
-[rename-fields](./scripts/rename-fields) | <ul><li>Renaming fields.</ul>
-[field-functions](./scripts/field-functions) | <ul><li>Change fields values with string functions.</ul>
-[formating-functions](./scripts/formating-functions) | <ul><li>Format input and display formats of date fields.</ul>
-[split-field](./scripts/split-field) | <ul><li>Splitting a field into several fields.<li>Using the `subfield` function.</ul>
-[compound-field](./scripts/compound-field) | <ul><li>Creating a compound field from other fields.<li>String concatenation.</ul>
-[resident-load](./scripts/resident-load) | <ul><li>Loading data from previously loaded table.</ul>
-[preceding-calc-field](./scripts/preceding-calc-field) | <ul><li>Using preceding LOAD to calculate a new field in single pass.</ul>
-[preceding-reuse-calc](./scripts/preceding-reuse-calc) | <ul><li>Using preceding LOAD to avoid duplicate calculations.<li>Usage of the `AUTOGENERATE` statement and the `recno` function.</ul>
-[concat-tables-auto](./scripts/concat-tables) | <ul><li>Automatic concatenation into one table.</ul>
-[concat-tables-forced](./scripts/concat-tables) | <ul><li>Forced concatenation into one table.</ul>
-[crosstable](./scripts/crosstable) | <ul><li>Turn a wide table into a tall table.</ul>
+[csv-file.qvs](./scripts/csv-file.qvs) | <ul><li>Loading data from a CSV file.</ul>
+[xlsx-file.qvs](./scripts/xlsx-file.qvs) | <ul><li>Loading data from an Excel file.</ul>
+[inline-table.qvs](./scripts/inline-table.qvs) | <ul><li>Loading an inline table.</ul>
+[subset-of-fields.qvs](./scripts/subset-of-fields.qvs) | <ul><li>Loading a subset of fields.</ul>
+[rename-fields.qvs](./scripts/rename-fields.qvs) | <ul><li>Renaming fields.</ul>
+[field-functions.qvs](./scripts/field-functions.qvs) | <ul><li>Change fields values with string functions.</ul>
+[formating-functions.qvs](./scripts/formating-functions.qvs) | <ul><li>Format input and display formats of date fields.</ul>
+[split-field.qvs](./scripts/split-field.qvs) | <ul><li>Splitting a field into several fields.<li>Using the `subfield` function.</ul>
+[compound-field.qvs](./scripts/compound-field.qvs) | <ul><li>Creating a compound field from other fields.<li>String concatenation.</ul>
+[resident-load.qvs](./scripts/resident-load.qvs) | <ul><li>Loading data from previously loaded table.</ul>
+[preceding-calc-field.qvs](./scripts/preceding-calc-field.qvs) | <ul><li>Using preceding LOAD to calculate a new field in single pass.</ul>
+[preceding-reuse-calc.qvs](./scripts/preceding-reuse-calc.qvs) | <ul><li>Using preceding LOAD to avoid duplicate calculations.<li>Usage of the `AUTOGENERATE` statement and the `RecNo` function.</ul>
+[concat-tables-auto.qvs](./scripts/concat-tables.qvs) | <ul><li>Automatic concatenation into one table.</ul>
+[concat-tables-forced.qvs](./scripts/concat-tables.qvs) | <ul><li>Forced concatenation into one table.</ul>
+[crosstable.qvs](./scripts/crosstable.qvs) | <ul><li>Turn a wide table into a tall table.</ul>

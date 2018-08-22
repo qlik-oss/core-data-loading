@@ -2,7 +2,7 @@
 // CSV files. No automatic cancatenation is done in this case.
 // By using the CONCATENATE keyword we can force concatenation. Since this
 // results in missing values, some entries in the resulting table will have NULL
-// values in the RegNo field.
+// values in the 'RegNo' field.
 
 LOAD Brand, RegNo, Year FROM [lib://data/cars1.csv];
 CONCATENATE LOAD Brand, Year FROM [lib://data/cars2.csv];
