@@ -48,7 +48,8 @@ Load script | Key topics
 [load-inline-table](./scripts/load-inline-table) | <ul><li>Loading an inline table.</ul>
 [load-subset-of-fields](./scripts/load-subset-of-fields) | <ul><li>Loading a subset of fields.</ul>
 [rename-fields](./scripts/rename-fields) | <ul><li>Renaming fields.</ul>
-[load-field-functions](./scripts/load-field-functions) | 
+[load-field-functions](./scripts/load-field-functions) | <ul><li>Change fields values with string functions.</ul>
+[load-formating-functions](./scripts/load-formating-functions) | <ul><li>Format input and display formats of date fields</ul>
 [split-field](./scripts/split-field) | <ul><li>Splitting a field into several fields.<li>Using the `subfield` function.</ul>
 [load-resident](./scripts/load-resident) | <ul><li>Loading data from previously loaded table.</ul>
 [preceding-load-calc-field](./scripts/preceding-load-calc-field) | <ul><li>Using preceding LOAD to calculate a new field in single pass.</ul>
