@@ -38,13 +38,13 @@ async function createConnection(app, name, connectionString, type) {
 
 async function setScriptAndDoReload(qix, app, script) {
   await app.setScript(script);
-  const reloadOk = await app.doReload();
+  await app.doReload();
   const progress = await qix.getProgress(0);
   if (progress.qErrorData.length !== 0) {
     const result = await app.checkScriptSyntax();
     if (result.length !== 0) {
       console.log(result[0]);
-    } 
+    }
     console.log(progress.qErrorData[0]);
   }
 }

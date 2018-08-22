@@ -48,7 +48,8 @@ Load script | Key topics
 [load-inline-table](./scripts/load-inline-table) | <ul><li>Loading an inline table.</ul>
 [load-subset-of-fields](./scripts/load-subset-of-fields) | <ul><li>Loading a subset of fields.</ul>
 [rename-fields](./scripts/rename-fields) | <ul><li>Renaming fields.</ul>
-[load-field-functions](./scripts/load-field-functions) | 
+[load-field-functions](./scripts/load-field-functions) | <ul><li>Change fields values with string functions.</ul>
+[load-formating-functions](./scripts/load-formating-functions) | <ul><li>Format input and display formats of date fields</ul>
 [split-field](./scripts/split-field) | <ul><li>Splitting a field into several fields.<li>Using the `subfield` function.</ul>
 [compounded-field](./scripts/compounded-field) | <ul><li>Creating a compounded field from other fields.<li>String concatenation.</ul>
 [load-resident](./scripts/load-resident) | <ul><li>Loading data from previously loaded table.</ul>
@@ -56,3 +57,4 @@ Load script | Key topics
 [preceding-load-reuse-calc](./scripts/preceding-load-reuse-calc) | <ul><li>Using preceding LOAD to avoid duplicate calculations.<li>Usage of the `AUTOGENERATE` statement and the `recno` function.</ul>
 [concat-tables-auto](./scripts/concat-tables) | <ul><li>Automatic concatenation into one table.</ul>
 [concat-tables-forced](./scripts/concat-tables) | <ul><li>Forced concatenation into one table.</ul>
+[load-crosstable](./scripts/load-crosstable) | <ul><li>Turn a wide table into a tall table.</ul>
