@@ -1,0 +1,9 @@
+// This load script shows how several fields are combined into one field in the
+// resulting table. The 'Date', 'Time', and 'Fraction' fields are concatenated
+// to form the resulting 'CompoundedTimestamp' field.
+
+Timeseries:
+    LOAD
+        Date & 'T' & Time & '.' & Fraction AS CompoundedTimestamp,
+        Value
+    FROM [lib://data/timeseries.csv];
