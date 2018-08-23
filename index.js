@@ -39,6 +39,7 @@ async function createConnection(app, name, connectionString, type) {
 async function setScriptAndDoReload(qix, app, script) {
   await app.setScript(script);
   await app.doReload();
+
   const progress = await qix.getProgress(0);
   if (progress.qErrorData.length !== 0) {
     const result = await app.checkScriptSyntax();
@@ -46,7 +47,10 @@ async function setScriptAndDoReload(qix, app, script) {
       console.log(result[0]);
     }
     console.log(progress.qErrorData[0]);
+    throw new Error(progress.qErrorData[0]);
   }
+
+  return progress.qErrorData.length === 0;
 }
 
 async function getTables(app) {
@@ -92,12 +96,26 @@ async function closeSession(session) {
   console.log('Session closed.');
 }
 
-(async () => {
-  const scriptPath = `${path.dirname(__filename)}/${process.argv[2]}`;
+async function setupAndReload(scriptPath, printOutput) {
   const script = await readScript(scriptPath);
-  const { session, qix, app } = await openSessionApp();
+  const { session, qix, app } = await openSessionApp(scriptPath);
   await createConnection(app, 'data', '/data/', 'folder');
-  await setScriptAndDoReload(qix, app, script);
-  await printTables(app);
+  const reloadOK = await setScriptAndDoReload(qix, app, script);
+
+  if (printOutput) {
+    await printTables(app);
+  }
+
   await closeSession(session);
-})();
+
+  return reloadOK;
+}
+
+if (process.argv[2]) {
+  (async () => {
+    const scriptPath = `${path.dirname(__filename)}/scripts/${process.argv[2]}`;
+    await setupAndReload(scriptPath, true);
+  })();
+}
+
+module.exports = setupAndReload;
