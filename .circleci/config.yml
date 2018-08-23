@@ -17,3 +17,13 @@ jobs:
       - run:
           name: Run Integration Tests
           command: npm run test
+      - setup_remote_docker
+      - run:
+          name: Login to Docker
+          command: docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
+      - run:
+          name: Spin up environment
+          command: ACCEPT_EULA=yes docker-compose up -d
+      - run:
+          name: Execute tests on remote dockers
+          command: npm run test
