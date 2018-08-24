@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "start": "node index.js",
-    "test": "node test/integration.js"
+    "test": "node reload-runner/index.js"
   },
   "repository": {
     "type": "git",
