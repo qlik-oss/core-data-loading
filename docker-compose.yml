@@ -13,7 +13,7 @@ services:
   node-test-runner:
     container_name: node-test-runner
     image: node:8
-    working_dir: /core-data-loading/reload-runner
+#    working_dir: /core-data-loading/reload-runner
     # Not working in circleCI, using cp instead to get test files
     volumes:
       - ./:/core-data-loading
