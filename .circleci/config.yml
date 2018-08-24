@@ -21,6 +21,5 @@ jobs:
       - run:
           name: Run Integration Tests
           command: |
-#            docker cp ./ node-test-runner:./reload-runner/
             docker exec node-test-runner sh -c 'npm install'
             docker exec node-test-runner sh -c 'TEST_HOST=qix-engine node index.js'
