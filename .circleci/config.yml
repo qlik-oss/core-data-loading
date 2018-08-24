@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Spin up environment
           command: |
-            docker cp ./data qix-engine:./data
+            docker cp ./data qix-engine:/
           command: ACCEPT_EULA=yes docker-compose up -d
       - run:
           name: Run Integration Tests
