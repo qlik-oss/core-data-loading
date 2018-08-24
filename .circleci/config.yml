@@ -20,6 +20,7 @@ jobs:
           command: ACCEPT_EULA=yes docker-compose up -d
       - run:
           name: Run Integration Tests
+          working_directory: /core-data-loading/reload-runner
           command: |
             docker exec node-test-runner sh -c 'npm install'
             docker exec node-test-runner sh -c 'TEST_HOST=qix-engine node index.js'
