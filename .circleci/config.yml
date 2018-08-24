@@ -18,8 +18,8 @@ jobs:
       - run:
           name: Spin up environment
           command: |
+            ACCEPT_EULA=yes docker-compose up -d
             docker cp ./data qix-engine:/
-          command: ACCEPT_EULA=yes docker-compose up -d
       - run:
           name: Run Integration Tests
           command: |
