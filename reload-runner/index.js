@@ -5,6 +5,7 @@ const setupAndReload = require('../index.js');
 const scriptFolder = '../scripts/';
 
 (async () => {
+  let anyErrors = false;
   fs.readdir(scriptFolder, async (err, files) => {
     for (let i = 0; i < files.length; i += 1) {
       const file = files[i];
@@ -15,12 +16,15 @@ const scriptFolder = '../scripts/';
           console.log(file, ' - Success');
         } else {
           console.log(file, ' - Fail');
+          anyErrors = true;
         }
       } catch (e) {
         console.log(file, ' - Fail');
         console.log(e);
+        anyErrors = true;
       }
     }
+    process.exit(anyErrors ? 1 : 0);
   });
 })();
 
