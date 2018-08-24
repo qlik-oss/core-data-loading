@@ -17,6 +17,8 @@ jobs:
       - setup_remote_docker
       - run:
           name: Spin up environment
+          command: |
+            docker cp ./data qix-engine:./data
           command: ACCEPT_EULA=yes docker-compose up -d
       - run:
           name: Run Integration Tests
