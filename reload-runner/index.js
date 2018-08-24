@@ -8,17 +8,15 @@ const scriptFolder = '../scripts/';
   fs.readdir(scriptFolder, async (err, files) => {
     for (let i = 0; i < files.length; i += 1) {
       const file = files[i];
-      try{
+      try {
         const result = await setupAndReload(scriptFolder + file, false);
 
         if (result) {
           console.log(file, ' - Success');
-        }
-        else {
+        } else {
           console.log(file, ' - Fail');
         }
-      }
-      catch(e){
+      } catch (e) {
         console.log(file, ' - Fail');
         console.log(e);
       }
