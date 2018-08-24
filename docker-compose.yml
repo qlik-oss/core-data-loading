@@ -1,7 +1,8 @@
 version: "2"
 
 services:
-  engine:
+  qix-engine:
+    container_name: qix-engine
     image: qlikcore/engine:12.215.0
     restart: always
     command: -S AcceptEULA=${ACCEPT_EULA}
@@ -9,3 +10,12 @@ services:
       - "19076:9076"
     volumes:
       - ./data:/data
+  node-test-runner:
+    container_name: node-test-runner
+    image: node:8
+    working_dir: /core-data-loading/reload-runner
+    # Not working in circleCI, using cp instead to get test files
+    volumes:
+      - ./:/core-data-loading
+    # Creating node busybox
+    command: "sh -c 'while :; do ping -c 1 google.com; sleep 60; done'"

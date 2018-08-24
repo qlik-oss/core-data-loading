@@ -6,10 +6,12 @@ const Table = require('easy-table');
 const fs = require('fs');
 const path = require('path');
 
+const host = process.env.TEST_HOST || 'localhost';
+
 async function openSessionApp() {
   const session = enigma.create({
     schema,
-    url: 'ws://localhost:19076/app/',
+    url: `ws://${host}:9076/app/engineData`,
     createSocket: url => new WebSocket(url),
   });
   const qix = await session.open();

@@ -3,7 +3,7 @@
 // to form the resulting 'CompoundTimestamp' field.
 
 Timeseries:
-    LOADasdas
+    LOAD
         Date & 'T' & Time & '.' & Fraction AS CompoundTimestamp,
         Value
     FROM [lib://data/timeseries.csv];
