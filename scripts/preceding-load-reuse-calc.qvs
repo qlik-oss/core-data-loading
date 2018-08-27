@@ -1,10 +1,6 @@
 // The (fictious) load script below performs the same calculation twice:
 // RecNo() * 1000 + Mod(RecNo(), 10) + 1
 
-// ========================================
-// First version - Duplicated calculation
-// ========================================
-
 // EvenOrOddness:
 //     LOAD
 //         RecNo() * 1000 + Mod(RecNo(), 10) + 1 AS KeyId,
@@ -14,10 +10,6 @@
 
 // By using preceding LOAD, we can reuse a calculation and avoid the double
 // calculation by adding an extra LOAD statement.
-
-// ========================================
-// Improved version - Reused calculation
-// ========================================
 
 EvenOrOddness:
     LOAD

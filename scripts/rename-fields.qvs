@@ -1,6 +1,11 @@
+// The script below shows how custom field names can be assigned using the AS
+// keyword. In this example the field 'rowID' is given the name 'ID', and the
+// field 'Airport' is given the name 'Name' in the resulting 'Airports' table.
+// 'City' just referred to, without using AS, just keeps its name.
+
 Airports:
     LOAD
-        rowID As ID,
+        rowID AS ID,
         Airport AS Name,
         City
     FROM [lib://data/airports.xlsx]
