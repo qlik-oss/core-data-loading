@@ -12,7 +12,7 @@ LET CustomDisplayDateFormat='YYYY-MM';
 
 Sales:
     LOAD
-        // #Date() defines the input format of the date value
+        // Date#() defines the input format of the date value
         // Date() defines that the date value is a date and of what format it will use
         Date(Date#([Date], '$(InputDateFormat)')) AS 'DateUsingDefaultSetting',
         Date(Date#([Date], '$(InputDateFormat)'), '$(CustomDisplayDateFormat)') AS 'DateUsingCustomDisplayFormat'
