@@ -14,8 +14,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "start": "node index.js",
-    "test": "node reload-runner/index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
