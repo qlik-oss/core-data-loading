@@ -1,3 +1,7 @@
+// This script enumerats the fields that shall be present in the resulting
+// 'Airports' table. The airports.csv provides more headers, but by enumerating
+// the ones we want to include, a subset of the fields are used in the output.
+
 Airports:
     LOAD
         Airport,

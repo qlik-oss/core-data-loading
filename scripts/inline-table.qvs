@@ -1,3 +1,8 @@
+// The script below uses the INLINE keyword which enables providing the table
+// field names and values directly in the load script file.
+// Here, the first row gives the field names 'City' and 'Country'.
+// Succeeding rows provides the field values.
+
 Cities:
     LOAD * INLINE 
     [
