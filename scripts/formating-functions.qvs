@@ -10,7 +10,7 @@ Sales:
     LOAD
         // #Date() defines the input format of the date value
         // Date() defines that the date value is a date and of what format it will use
-        Date(Date#([Date], '$(InputDateFormat)')) as 'DateUsingDefaultSetting',
+        Date(Date#([Date], '$(InputDateFormat)')) AS 'DateUsingDefaultSetting',
         Date(Date#([Date], '$(InputDateFormat)'), '$(CustomDisplayDateFormat)') AS 'DateUsingCustomDisplayFormat'
     FROM [lib://data/sales.csv]
     (txt, utf8, embedded labels, delimiter is ';');
