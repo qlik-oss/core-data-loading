@@ -14,3 +14,15 @@ jobs:
       - run:
           name: Run ESLint
           command: npm run lint
+      - setup_remote_docker
+      - run:
+          name: Spin up environment
+          command: |
+            ACCEPT_EULA=yes docker-compose up -d
+            docker cp ./data qix-engine:/
+      - run:
+          name: Run Integration Tests
+          command: |
+            docker cp ./ node-test-runner:./
+            docker exec node-test-runner sh -c 'npm install'
+            docker exec node-test-runner sh -c 'cd ./reload-runner && TEST_HOST=qix-engine node index.js'
