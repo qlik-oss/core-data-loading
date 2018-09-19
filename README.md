@@ -29,7 +29,7 @@ You can now run each script example by providing it as an argument to `npm start
 named `csv-file.qvs', run:
 
 ```sh
-npm start scripts/csv-file.qvs
+npm start csv-file.qvs
 ```
 
 This should print the table content loaded into Qlik Associative Engine to the console.
