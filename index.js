@@ -11,7 +11,7 @@ const host = process.env.TEST_HOST || 'localhost';
 async function openSessionApp() {
   const session = enigma.create({
     schema,
-    url: `ws://${host}:19076/app/engineData`,
+    url: `ws://${host}:9076/app/engineData`,
     createSocket: url => new WebSocket(url),
   });
   const qix = await session.open();

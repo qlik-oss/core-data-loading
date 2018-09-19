@@ -7,7 +7,7 @@ services:
     restart: always
     command: -S AcceptEULA=${ACCEPT_EULA}
     ports:
-      - "19076:9076"
+      - "9076:9076"
     volumes:
       - ./data:/data
   node-test-runner:
