@@ -21,7 +21,7 @@
     "url": "git+https://github.com/qlik-oss/core-data-loading.git"
   },
   "devDependencies": {
-    "eslint": "3.19.0",
+    "eslint": "5.6.1",
     "eslint-config-airbnb-base": "11.3.2",
     "eslint-plugin-import": "2.14.0"
   },
