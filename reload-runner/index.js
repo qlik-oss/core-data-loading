@@ -27,4 +27,3 @@ const scriptFolder = '../scripts/';
     process.exit(anyErrors ? 1 : 0);
   });
 })();
-
