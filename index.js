@@ -60,7 +60,8 @@ async function getTables(app) {
     { qcx: 0, qcy: 0 },
     30,
     true,
-    false);
+    false,
+  );
   return tablesAndKeys.qtr;
 }
 
