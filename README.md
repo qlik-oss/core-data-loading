@@ -25,8 +25,7 @@ Next, install dependencies:
 npm install
 ```
 
-You can now run each script example by providing it as an argument to `npm start`. For example, to run the load script
-named `csv-file.qvs', run:
+You can now run each script example by providing it as an argument to `npm start`. Note that you should omit the `scripts/` folder and only type out the filename. For example, to run the load script named `csv-file.qvs', run:
 
 ```sh
 npm start csv-file.qvs
