@@ -5,7 +5,7 @@ services:
     container_name: qix-engine
     image: qlikcore/engine:12.277.0
     restart: always
-    command: -S AcceptEULA=${ACCEPT_EULA}
+    command: -S AcceptEULA=${ACCEPT_EULA} -S ScriptLogVerbosity=4
     ports:
       - "9076:9076"
     volumes:
