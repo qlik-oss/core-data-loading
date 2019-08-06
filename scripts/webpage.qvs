@@ -5,7 +5,7 @@
 // and that the delimiter is ','.
 
 
-`Airports:
+`Movies:
     LOAD *
     FROM [lib://webdata]
     (html, utf8, delimiter is ',');`
