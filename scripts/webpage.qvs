@@ -5,7 +5,7 @@
 // and that the delimiter is ','.
 
 
-`Movies:
+Aiports:
     LOAD *
     FROM [lib://webdata]
-    (html, utf8, delimiter is ',');`
+    (html, utf8, delimiter is ',');
