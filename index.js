@@ -12,7 +12,7 @@ async function openSessionApp() {
   const session = enigma.create({
     schema,
     url: `ws://${host}:9076/app/engineData`,
-    createSocket: url => new WebSocket(url),
+    createSocket: (url) => new WebSocket(url),
   });
   const qix = await session.open();
   const app = await qix.createSessionApp();
