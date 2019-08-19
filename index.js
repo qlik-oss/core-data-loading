@@ -21,7 +21,7 @@ async function openSessionApp() {
   return {
     session,
     qix,
-    app
+    app,
   };
 }
 
@@ -61,10 +61,10 @@ async function setScriptAndDoReload(qix, app, script) {
 async function getTables(app) {
   const tablesAndKeys = await app.getTablesAndKeys({
       qcx: 1000,
-      qcy: 1000
+      qcy: 1000,
     }, {
       qcx: 0,
-      qcy: 0
+      qcy: 0,
     },
     30,
     true,
@@ -111,7 +111,7 @@ async function setupAndReload(scriptPath, printOutput) {
   const {
     session,
     qix,
-    app
+    app,
   } = await openSessionApp(scriptPath);
   await createConnection(app, 'data', '/data/', 'folder');
   await createConnection(app, 'webdata', 'https://raw.githubusercontent.com/qlik-oss/core-data-loading/master/data/airports.csv', 'internet');
