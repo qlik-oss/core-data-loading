@@ -68,7 +68,7 @@ async function getTables(app) {
     },
     30,
     true,
-    false, );
+    false);
   return tablesAndKeys.qtr;
 }
 
