@@ -60,15 +60,15 @@ async function setScriptAndDoReload(qix, app, script) {
 
 async function getTables(app) {
   const tablesAndKeys = await app.getTablesAndKeys({
-      qcx: 1000,
-      qcy: 1000,
-    }, {
-      qcx: 0,
-      qcy: 0,
-    },
-    30,
-    true,
-    false);
+    qcx: 1000,
+    qcy: 1000,
+  }, {
+    qcx: 0,
+    qcy: 0,
+  },
+  30,
+  true,
+  false);
   return tablesAndKeys.qtr;
 }
 
