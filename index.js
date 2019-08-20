@@ -18,7 +18,11 @@ async function openSessionApp() {
   const app = await qix.createSessionApp();
   await qix.configureReload(true, true, false);
   console.log('Session opened.\n');
-  return { session, qix, app };
+  return {
+    session,
+    qix,
+    app,
+  };
 }
 
 async function readScript(scriptPath) {
@@ -55,13 +59,16 @@ async function setScriptAndDoReload(qix, app, script) {
 }
 
 async function getTables(app) {
-  const tablesAndKeys = await app.getTablesAndKeys(
-    { qcx: 1000, qcy: 1000 },
-    { qcx: 0, qcy: 0 },
-    30,
-    true,
-    false,
-  );
+  const tablesAndKeys = await app.getTablesAndKeys({
+    qcx: 1000,
+    qcy: 1000,
+  }, {
+    qcx: 0,
+    qcy: 0,
+  },
+  30,
+  true,
+  false);
   return tablesAndKeys.qtr;
 }
 
@@ -100,8 +107,13 @@ async function closeSession(session) {
 
 async function setupAndReload(scriptPath, printOutput) {
   const script = await readScript(scriptPath);
-  const { session, qix, app } = await openSessionApp(scriptPath);
+  const {
+    session,
+    qix,
+    app,
+  } = await openSessionApp(scriptPath);
   await createConnection(app, 'data', '/data/', 'folder');
+  await createConnection(app, 'webdata', 'https://raw.githubusercontent.com/qlik-oss/core-data-loading/master/data/airports.csv', 'internet');
   const reloadOK = await setScriptAndDoReload(qix, app, script);
 
   if (printOutput) {

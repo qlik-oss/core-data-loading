@@ -1,13 +1,13 @@
 {
-    "extends": "airbnb-base",
-    "rules": {
-        "no-console": "off",
-        "max-len": "off",
-        "import/no-unresolved": 0, // Otherwise npm install had to be executed in each example
-        "class-methods-use-this": 0,
-        "no-underscore-dangle": 0
-    },
-    "env": {
-      "node": true
-    }
+  "extends": "airbnb-base",
+  "rules": {
+    "no-console": "off",
+    "max-len": "off",
+    "import/no-unresolved": 0, // Otherwise npm install had to be executed in each example
+    "class-methods-use-this": 0,
+    "no-underscore-dangle": 0
+  },
+  "env": {
+    "node": true
+  }
 }

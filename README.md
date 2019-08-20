@@ -55,3 +55,4 @@ Load script | Key topics
 [concat-tables-auto.qvs](./scripts/concat-tables.qvs) | <ul><li>Automatic concatenation into one table.</ul>
 [concat-tables-forced.qvs](./scripts/concat-tables.qvs) | <ul><li>Forced concatenation into one table.</ul>
 [crosstable.qvs](./scripts/crosstable.qvs) | <ul><li>Turn a wide table into a tall table.</ul>
+[webpage.qvs](./scripts/webpage.qvs) | <ul><li>Load data from a html source</ul>
