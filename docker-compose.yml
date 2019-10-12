@@ -12,7 +12,7 @@ services:
       - ./data:/data
   node-test-runner:
     container_name: node-test-runner
-    image: node:8.16.1
+    image: node:8.16.2
     volumes:
       - ./:/core-data-loading
     command: "sh -c 'while :; do ping -c 1 google.com; sleep 60; done'"
