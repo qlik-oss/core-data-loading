@@ -9,7 +9,7 @@
   "dependencies": {
     "easy-table": "1.1.1",
     "enigma.js": "2.7.0",
-    "ws": "7.2.5"
+    "ws": "7.3.0"
   },
   "scripts": {
     "lint": "eslint .",
