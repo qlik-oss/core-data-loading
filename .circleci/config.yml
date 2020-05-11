@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8.17.0
+      - image: circleci/node:12.13
     working_directory: ~/core-data-loading
     steps:
       - checkout
