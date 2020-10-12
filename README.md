@@ -1,5 +1,7 @@
 # Qlik Core Load Script Examples
 
+*As of 1 July 2020, Qlik Core is no longer available to new customers. No further maintenance will be done in this repository.*
+
 This repository contains examples load scripts used to load data in different ways into Qlik Associative Engine.
 
 The examples provide a good starting point to explore for anyone with the need to write load scripts specific to their
